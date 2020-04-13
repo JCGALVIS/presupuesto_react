@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
-import Pregunta from './componentes/Pregunta'
-import Formulario from './componentes/Formulario'
-import Listado from './componentes/Listado'
+import Pregunta from './componentes/Pregunta';
+import Formulario from './componentes/Formulario';
+import Listado from './componentes/Listado';
+import ControlPresupuesto from './componentes/ControlPresuouesto';
 
 function App() {
   //Definir el statue
@@ -43,6 +44,11 @@ function App() {
                   <div className="one-half column">
                     <Listado
                       gastos={gastos}
+                    />
+
+                    <ControlPresupuesto
+                      presupuesto={presupuesto}
+                      restante={restante}
                     />
                   </div>
                 </div>
