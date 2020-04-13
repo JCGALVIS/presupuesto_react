@@ -29,7 +29,7 @@ function App() {
       //Resetear a false
       guardarCrearGasto(false);
     }
-  }, [gasto]);
+  }, [gasto, creargasto, gastos, restante]);
 
   return (
     <div className="container">
