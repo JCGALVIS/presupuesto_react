@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Pregunta from './componentes/Pregunta'
 import Formulario from './componentes/Formulario'
+import Listado from './componentes/Listado'
 
 function App() {
   //Definir el statue
@@ -40,7 +41,9 @@ function App() {
                     />
                   </div>
                   <div className="one-half column">
-                    2
+                    <Listado
+                      gastos={gastos}
+                    />
                   </div>
                 </div>
               )
