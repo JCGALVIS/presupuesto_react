@@ -4,6 +4,7 @@ import Formulario from './componentes/Formulario';
 import Listado from './componentes/Listado';
 import ControlPresupuesto from './componentes/ControlPresuouesto';
 
+
 function App() {
   //Definir el statue
   const [presupuesto, guardarPresupuesto] = useState(0);
